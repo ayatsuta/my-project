@@ -6,8 +6,63 @@
     <title>My Project</title>
 </head>
 <body>
-    <header>Header</header>
-    <main></main>
-    <footer>Footer</footer>
+  <h1>Mate academy</h1>
+  <form 
+    action="" 
+    method="post"
+    novalidate
+    >
+      <div class="form-field">
+        Username: <br>
+        <input 
+        type="text" 
+        name="usrname" 
+        placeholder="Enter your name"
+        pattern="\w+"
+        >
+      </div>
+      <div class="form-field">
+        Email: <br>
+        <input 
+        type="email" 
+        name="email" 
+        placeholder="Enter your email"
+        >
+      </div>
+        <div class="form-field">
+        Password: <br>
+        <input 
+          type="text" 
+          name="password"
+          placeholder="Enter your password"
+          required
+          minlength="8"
+          maxlength="20"
+        >
+      </div>
+
+      <label class="form-field">
+        <input 
+          type="checkbox" 
+          name="password"
+          value="yes"
+        >
+        I accept the terms
+      </label>
+
+      <div class="form-field">
+        <input
+          id="remmemeber-me" 
+          type="checkbox" 
+          name="remember"
+          value="yes"
+          checked
+        >
+        <label for="remmeber-me">Rememeber me</label>
+      </div>
+        
+      <button>Sign up</button>
+  </form>
+  
 </body>
 </html>
